@@ -1,0 +1,57 @@
+{
+    "multiCommand.commands": [
+        { "command": "multiCommand.f11",
+            "sequence": [ "workbench.action.files.saveAll",
+                { "command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\u000D clear ; LANG=C make doxy \u000D"}}]},
+        { "command": "multiCommand.f12",
+            "sequence": [ "workbench.action.files.saveAll",
+                { "command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\u000D clear ; LANG=C make cpp \u000D"}}]},
+        { "command": "multiCommand.altx",
+            "sequence": [ "workbench.action.files.saveAll",
+                { "command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\u000D clear ; LANG=C make run \u000D"}}]},
+        { "command": "multiCommand.alts",
+            "sequence": [ "workbench.action.files.saveAll",
+                { "command": "workbench.action.terminal.sendSequence",
+                    "args": {"text": "\u000D clear ; LANG=C make format \u000D"}}]},
+    ],
+
+    // files
+    "files.exclude": {
+        "docs/**": true,
+    },
+    "files.associations": {
+        "lib/*.ini": "javascript",
+        ".doxygen": "ini"
+    },
+
+    // editor
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "editor.rulers": [80],
+    "workbench.tree.indent": 24,
+    "editor.fontSize": 14,
+    "editor.lineNumbers": "on",
+    "explorer.autoReveal": false,
+    "files.insertFinalNewline": true,
+    "git.enabled": false,
+    "terminal.integrated.copyOnSelection": true,
+    // "editor.inlayHints.enabled": "offUnlessPressed",
+
+    // clang-format
+    "clang-format.executable":     "clang-format",
+    "clang-format.fallbackStyle":  "Google",
+    "clang-format.style":          "file",
+
+    // C++
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format",
+        "editor.formatOnSave":     true
+    },
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+
+    // D
+}

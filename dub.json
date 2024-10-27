@@ -1,0 +1,14 @@
+{
+	"name":          "djs",
+	"description":   "D/JavaScript engine",
+	"authors":      ["Dmitry Ponyatov <dponyatov@gmail.com"],
+	"copyright":     "Copyright © 2024, Dmitry Ponyatov <dponyatov@gmail.com",
+	"license":       "MIT",
+    "homepage":      "https://gitflic.ru/project/dponyatov/djs",
+    "sourcePaths":  ["src"],
+    "targetType":    "executable",
+    "targetPath":    "bin",
+    "buildOptions": ["lowmem"],
+    "dflags":       ["-lowmem"],
+    "dependencies": {}
+}

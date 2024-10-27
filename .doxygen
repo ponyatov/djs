@@ -1,0 +1,19 @@
+PROJECT_NAME           = "D/JS"
+PROJECT_BRIEF          = "D/JavaScript engine"
+PROJECT_LOGO           = doc/logo.png
+HTML_OUTPUT            = docs
+OUTPUT_DIRECTORY       =
+INPUT                  = README.md src inc lib
+EXCLUDE                = ref/* lib/python3.11
+WARN_IF_UNDOCUMENTED   = NO
+RECURSIVE              = YES
+USE_MDFILE_AS_MAINPAGE = README.md
+GENERATE_LATEX         = NO
+FILE_PATTERNS         += *.lex *.yacc *.ini *.js
+EXTENSION_MAPPING      = lex=C++ yacc=C++ ino=C++ ini=C++ js=C++
+FILTER_PATTERNS        = *.ini=bin/doxyjs *.js=bin/doxyjs
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+LAYOUT_FILE            = doc/DoxygenLayout.xml
+SORT_GROUP_NAMES       = YES
+REPEAT_BRIEF           = NO
